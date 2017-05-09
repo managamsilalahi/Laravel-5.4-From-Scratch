@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	$name = "Managam";
+    return view('welcome', compact('name'));
 });
 
 Route::get('/about', function () {

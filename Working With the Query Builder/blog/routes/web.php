@@ -12,16 +12,11 @@
 */
 
 Route::get('/', function () {
-	//$name = "Managam";
-	//return view('welcome', compact('name'));
 
-	$tasks = [
-		'Go to the store',
-		'Finish my homework',
-		'Go to bed'
-	];
+	$tasks = DB::table('tasks')->get();
 
-    return view('welcome', compact('tasks'));
+	return $tasks;
+
 });
 
 Route::get('/about', function () {

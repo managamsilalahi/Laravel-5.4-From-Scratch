@@ -11,7 +11,6 @@
 |
 */
 
-use App\Task;
 
 Route::get('/', function () {
 	return redirect('/tasks');

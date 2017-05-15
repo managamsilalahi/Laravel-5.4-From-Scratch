@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.master')
 
 @section('content')
 	<section class="jumbotron text-center">
